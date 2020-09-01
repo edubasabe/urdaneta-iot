@@ -32,8 +32,9 @@ module.exports = {
       resolve: `gatsby-plugin-emotion`,
       options: {
         // Accepts all options defined by `babel-plugin-emotion` plugin.
-      }
-    }
+      },
+    },
+    'gatsby-plugin-postcss',
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
