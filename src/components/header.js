@@ -13,22 +13,18 @@ const Header = ({ siteTitle }) => (
       background-position: right center;
       height: 470px;
     `}
+    className="flex items-start flex-col"
   >
-    <div className="antialiased bg-gray-100">
-      <div className="w-full text-gray-700 bg-white">
-        <div className="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
-          <div className="flex flex-row items-center justify-between p-4">
-            <Link
-              to="/"
-              className="text-lg font-semibold text-gray-900  focus:outline-none focus:shadow-outline"
-            >
-              Urdaneta IOT Consulting
-            </Link>
-          </div>
-          <Navbar />
-        </div>
-      </div>
-    </div>
+    <Navbar />
+
+    <h2 className="text-5xl font-light max-w-3xl ml-12 mt-auto mb-20">
+      <q>
+        The Internet of Things has the potential to change the world, just as
+        the internet did. Maybe even more so.
+      </q>
+      <br />
+      <cite>Kevin Ashton</cite>
+    </h2>
   </header>
 )
 

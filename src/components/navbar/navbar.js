@@ -1,34 +1,26 @@
 import React from 'react'
 import { Link } from 'gatsby'
-
+import Logo from '../../images/urdaneta-iot-logo.png'
+import Nav from './nav/nav'
 const Navbar = () => {
   return (
-    <nav className="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
-      <Link
-        to="/"
-        className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-      >
-        Inicio
-      </Link>
-      <Link
-        to="/quienes-somos"
-        className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-      >
-        ¿Quiénes Somos?
-      </Link>
-      <Link
-        to="/servicios"
-        className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-      >
-        Servicios
-      </Link>
-      <Link
-        to="/contacto"
-        className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-      >
-        Contáctenos
-      </Link>
-    </nav>
+    <div className="w-full text-gray-700 bg-white">
+      <div className="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+        <div className="flex flex-row items-center justify-between">
+          <Link
+            to="/"
+            className="text-lg font-semibold text-gray-900  focus:outline-none focus:shadow-outline"
+          >
+            <img
+              src={Logo}
+              alt="Urdaneta IOT Consulting"
+              className="h-20 mb-0"
+            />
+          </Link>
+        </div>
+        <Nav />
+      </div>
+    </div>
   )
 }
 
