@@ -10,7 +10,7 @@ const hero = ({ background }) => {
         background-size: cover;
         background-position: right center;
       `}
-      className="Hero__container flex items-center"
+      className="Hero__container flex items-center px-4"
     >
       <h2 className="Hero__title text-lg-5xl font-light max-w-3xl mb-0 mt-12 mt-lg-2">
         <q className="Hero__quote block mb-6">

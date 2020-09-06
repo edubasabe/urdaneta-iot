@@ -2,7 +2,6 @@ import React from 'react'
 import styled from '@emotion/styled'
 
 const Title = styled.h2`
-  text-align: center
   font-style: normal;
   font-weight: 500;
   font-size: 30px;
@@ -21,8 +20,8 @@ const Subtitle = styled.h3`
 const headline = ({ title, subtitle }) => {
   return (
     <>
-      <Title>{title}</Title>
-      <Subtitle>{subtitle}</Subtitle>
+      <Title className="px-4 mt-4 lg:mt-12">{title}</Title>
+      <Subtitle className="px-4">{subtitle}</Subtitle>
     </>
   )
 }
