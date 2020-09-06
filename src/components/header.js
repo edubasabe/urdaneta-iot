@@ -4,7 +4,9 @@ import Navbar from './navbar/navbar'
 import { withPrefix } from 'gatsby'
 
 const Header = ({ siteTitle }) => {
-  const isHomepage = window.location.pathname === withPrefix('/')
+  const isHomepage = window
+    ? window.location.pathname === withPrefix('/')
+    : null
   return (
     <header>
       <Navbar transparent={isHomepage} />
