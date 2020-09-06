@@ -1,0 +1,32 @@
+$grid-breakpoints-down: ( xs: 0, sm: 480px, md: 768px, lg: 1024px, xl: 1200px )
+
+$grid-breakpoints-up: ( xs: 0, sm: 479.99px, md: 767.99px, lg: 1023.99px, xl: 1199.99px )
+
+@mixin media-breakpoint-down($size) 
+  @if ($size==sm)
+    @media (max-width: map-get($grid-breakpoints-down, sm)) 
+      @content;
+  @else if ($size==md) 
+    @media (max-width: map-get($grid-breakpoints-down, md)) 
+      @content;
+  @else if ($size==lg) 
+    @media (max-width: map-get($grid-breakpoints-down, lg)) 
+      @content;
+  @else 
+    @media (max-width: map-get($grid-breakpoints-down, xl)) 
+      @content;
+
+@mixin media-breakpoint-up($size) 
+  @if ($size==sm)
+    @media (min-width: map-get($grid-breakpoints-up, sm)) 
+      @content;
+    
+  @else if ($size==md)
+    @media (min-width: map-get($grid-breakpoints-up, md))
+      @content;
+  @else if ($size==lg)
+    @media (min-width: map-get($grid-breakpoints-up, lg))
+      @content;
+  @else
+    @media (min-width: map-get($grid-breakpoints-up, xl))
+      @content;
