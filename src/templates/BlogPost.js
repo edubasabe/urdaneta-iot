@@ -2,6 +2,8 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import { Heading, Link } from '@chakra-ui/core'
+import { Link as GatsbyLink } from 'gatsby'
 
 const BlogPostTemplate = ({ data }) => (
   <Layout>
@@ -9,8 +11,13 @@ const BlogPostTemplate = ({ data }) => (
       title={data.wordpressPost.title}
       description={data.wordpressPost.description}
     />
-    <section className="container mx-auto">
-      <h1>{data.wordpressPost.title}</h1>
+    <section className="container mx-auto pt-5">
+      <Link as={GatsbyLink} to="/blog">
+        Volver
+      </Link>
+      <Heading as="h2" my="5">
+        {data.wordpressPost.title}
+      </Heading>
       <div
         style={{ marginTop: 20 }}
         dangerouslySetInnerHTML={{ __html: data.wordpressPost.content }}
