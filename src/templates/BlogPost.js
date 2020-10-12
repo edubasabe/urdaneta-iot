@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import { Heading, Link } from '@chakra-ui/core'
-import { Link as GatsbyLink, graphql } from 'gatsby'
+import { Link as GatsbyLink } from 'gatsby'
 
 const BlogPostTemplate = ({ data }) => (
   <Layout>
