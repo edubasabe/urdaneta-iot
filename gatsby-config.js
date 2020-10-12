@@ -3,6 +3,7 @@ module.exports = {
     title: `Urdaneta IOT`,
     description: `SERVICIOS DE INTERÉS QUIENES SOMOS Urdaneta Consulting IOT dedicate está conformado por un grupo de Profesionales que tienen un objetivo común: encontrar la manera de hacer el trabajo mejor. Para esto buscamos toda la ayuda posible de la tecnología porque creemos firmemente que es el método más eficiente para mejorar nuestra calidad de vida.`,
     siteUrl: `https://urdaneta-iot.com`,
+    author: `@edubasabe`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

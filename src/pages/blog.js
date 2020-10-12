@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import { List, ListItem, Box, Image, Heading } from '@chakra-ui/core'
-import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 
 const Blog = ({ data }) => (
   <Layout>
