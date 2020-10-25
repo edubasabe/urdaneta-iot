@@ -15,13 +15,14 @@ const Subtitle = styled.h3`
   font-size: 18px;
   line-height: 1.7;
   color: #000000;
+  margin-bottom: 3rem;
 `
 
 const headline = ({ title, subtitle }) => {
   return (
     <>
-      <Title className="px-4 mt-4 lg:mt-12">{title}</Title>
-      <Subtitle className="px-4">{subtitle}</Subtitle>
+      <Title className="px-4 mb-4 lg:mt-12">{title}</Title>
+      <Subtitle className="px-4 max-w-2xl mx-auto">{subtitle}</Subtitle>
     </>
   )
 }

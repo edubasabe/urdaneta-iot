@@ -20,13 +20,13 @@ const Feature = ({ icon, title, description }) => {
       break
   }
   return (
-    <div className="flex flex-col justify-center items-center px-4">
+    <li className="flex flex-col justify-center items-center px-4 py-4 max-w-xs mx-auto">
       <span className="bg-gray-200 p-8 flex w-auto rounded-full mb-6">
         {featureIcon}
       </span>
-      <h4 className="mb-0">{title}</h4>
+      <h4 className="mb-0 text-lg font-bold">{title}</h4>
       <p className="text-center">{description}</p>
-    </div>
+    </li>
   )
 }
 
