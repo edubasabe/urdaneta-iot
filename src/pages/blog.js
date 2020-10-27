@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import { List, ListItem, Box, Image, Heading } from '@chakra-ui/core'
+import { List, ListItem, Box, Image, Heading, Text } from '@chakra-ui/core'
 import { Link, graphql } from 'gatsby'
 
 const Blog = ({ data }) => (
@@ -12,20 +12,22 @@ const Blog = ({ data }) => (
         {data.allWordpressPost.edges.map(post => (
           <ListItem key={post.node.wordpress_id}>
             <Link to={`/post/${post.node.slug}`}>
-              <Box borderWith="1px" rounded="lg" p="6" display="flex">
+              <Box borderWith="1px" rounded="lg" p="6" display={{ md: 'flex' }}>
                 {post.node.featured_media ? (
-                  <Box size="sm" mr="5">
+                  <Box flexShrink="0">
                     <Image
                       src={post.node.featured_media.source_url}
                       alt={post.title}
+                      rounded="lg"
+                      width={{ md: 40 }}
                     />
                   </Box>
                 ) : null}
-                <Box flex="1">
-                  <Heading as="h2" size="xl">
+                <Box mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>
+                  <Heading size="xl" className="mb-4">
                     {post.node.title}
                   </Heading>
-                  <div
+                  <Text
                     dangerouslySetInnerHTML={{ __html: post.node.excerpt }}
                   />
                 </Box>
