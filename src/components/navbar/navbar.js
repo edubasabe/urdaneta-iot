@@ -33,7 +33,7 @@ const Navbar = ({ transparent }) => {
           <li className="mr-3 lg:mr-8">
             <Link
               to="/"
-              exact
+              exact="true"
               className="font-semibold hover:text-blue-600 flex flex-col items-center text-xs"
             >
               <FiHome size="1.8em" className="mb-1" />

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -11,7 +10,6 @@ const QuienesSomos = () => (
     <SEO title="Quiénes somos" />
     <Box className="container mx-auto my-8">
       <Box>
-        {/* <Link to="/">Go back to the homepage</Link> */}
         <Heading as="h1">Quiénes somos</Heading>
         <Divider />
         <Text>
