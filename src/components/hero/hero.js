@@ -1,10 +1,11 @@
 import React from 'react'
 import { css } from '@emotion/core'
 import './hero.sass'
+import { Heading, Text } from '@chakra-ui/core'
 
 const hero = ({ background }) => {
   return (
-    <div
+    <section
       css={css`
         background-image: url(${background});
         background-size: cover;
@@ -12,16 +13,14 @@ const hero = ({ background }) => {
       `}
       className="Hero__container flex items-center px-4"
     >
-      <h2 className="Hero__title text-lg-5xl font-light max-w-3xl mb-0 mt-12 mt-lg-2">
-        <q className="Hero__quote block mb-6">
+      <Heading className="Hero__quote max-w-screen-lg mx-auto" fontWeight="200">
+        <q className="block mb-6">
           The Internet of Things has the potential to change the world, just as
           the internet did. Maybe even more so.
         </q>
-        <span>
-          <cite className="mt-1">Kevin Ashton</cite>
-        </span>
-      </h2>
-    </div>
+        <Text as="cite">Kevin Ashton</Text>
+      </Heading>
+    </section>
   )
 }
 
