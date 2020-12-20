@@ -8,7 +8,7 @@ import { Box, Divider, Heading, Text } from '@chakra-ui/core'
 const QuienesSomos = () => (
   <Layout>
     <SEO title="Quiénes somos" />
-    <Box className="container mx-auto my-8">
+    <Box className="container mx-auto my-8 lg:px-8">
       <Box>
         <Heading as="h1">Quiénes somos</Heading>
         <Divider />
