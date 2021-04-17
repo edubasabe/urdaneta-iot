@@ -1,7 +1,7 @@
 import React from 'react'
 import { css } from '@emotion/core'
-import './hero.sass'
 import { Heading, Text } from '@chakra-ui/core'
+import './hero.css'
 
 const hero = ({ background }) => {
   return (
@@ -10,6 +10,11 @@ const hero = ({ background }) => {
         background-image: url(${background});
         background-size: cover;
         background-position: right center;
+        height: 320px;
+
+        @media (min-width: 1024px) {
+          height: 470px;
+        }
       `}
       className="Hero__container flex items-center px-4"
     >
