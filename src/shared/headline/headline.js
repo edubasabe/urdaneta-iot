@@ -21,7 +21,7 @@ const Subtitle = styled.h3`
 const headline = ({ title, subtitle }) => {
   return (
     <>
-      <Title className="px-4 mb-4 lg:mt-12">{title}</Title>
+      <Title className="px-4 mb-4">{title}</Title>
       <Subtitle className="px-4 max-w-2xl mx-auto">{subtitle}</Subtitle>
     </>
   )

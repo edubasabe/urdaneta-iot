@@ -5,7 +5,7 @@ import Feature from './feature/feature'
 const features = () => {
   return (
     <>
-      <section className="features container mx-auto my-6">
+      <section className="features container mx-auto py-6 lg:py-12">
         <Headline
           title="Sabemos lo que hacemos"
           subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna."

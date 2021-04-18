@@ -11,7 +11,7 @@ const Footer = () => {
             industrias.
           </p>
         </div>
-        <div className="section-2 my-4">
+        <div className="section-2 my-4 lg:my-0">
           <h4 className="text-lg font-bold mb-4">INFORMACIÓN DE CONTACTO</h4>
           <ul>
             <li>
@@ -31,7 +31,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="section-2 my-4">
+        <div className="section-2 my-4 lg:my-0">
           <h4 className="text-lg font-bold mb-4">REDES SOCIALES</h4>
           <ul>
             <li>
@@ -47,7 +47,7 @@ const Footer = () => {
         </div>
       </div>
       <hr />
-      <div className="container mx-auto">
+      <div className="container mx-auto mt-4">
         <p className="text-xs md:text-base text-center md:text-left">
           © {new Date().getFullYear()} Urdaneta IOT. Todos los derechos
           reservados.
